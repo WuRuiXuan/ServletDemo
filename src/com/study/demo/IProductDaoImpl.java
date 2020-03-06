@@ -10,7 +10,7 @@ import org.apache.commons.dbutils.handlers.BeanListHandler;
 public class IProductDaoImpl implements IProductDao {
 
 	@Override
-	public void insert(Product p) throws SQLException {
+	public void add(Product p) throws SQLException {
 		String sql = "insert into product(name, price, nums, description) values(?, ?, ?, ?)";
 		QueryRunner qr = new QueryRunner();
 		qr.update(MyDbUtils.getConnection(), sql, p.getName(), p.getPrice(), p.getNums(), p.getDescription());
