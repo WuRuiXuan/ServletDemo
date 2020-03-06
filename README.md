@@ -6,7 +6,7 @@
 
 
 # 项目运行说明
-1. MySQL新建库mydb，在该库下新建表products（字段：pid, name, price, nums, description）
+1. MySQL新建库mydb，在该库下新建表product（字段：pid, name, price, nums, description）
 2. 用eclipse(for Java EE Developers)打开项目目录
 3. 选中项目 -> 鼠标右键 -> Run As -> Run on Server
 4. 报错"The server cannot be started because one or more of the ports are invalid."解决办法：Window -> Show View -> Servers -> 在Servers窗口双击第一项，弹出Server配置界面（如未创建Server则会创建，然后再次双击） -> Ports -> 修改Tomcat admin port端口号为8005 -> 保存
